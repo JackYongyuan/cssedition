@@ -1,0 +1,46 @@
+/* 字体 */
+@charset "utf-8";
+
+/* 导入其它CSS */
+@import "at-import-a.css";
+
+
+h1 {
+  font-size: 24px;
+}
+
+/* 在 CSS块中或CSS块后声明，将被忽略 */
+@import "at-import-b.css";
+
+/* media 媒体扫描 条件为true或false,只要声明正确不会产生错误 */
+@media screen and (min-width:500px) {
+  h1 {
+    color: rebeccapurple;
+  }
+}
+
+h2 {
+  color: blue;
+}
+
+@media screen and (min-width: 700px) {
+  h1 {
+    color: red;
+  }
+}
+
+@namespace url(http://www.w3.org/1999/xhtml);
+@namespace svg url(http://www.w3.org/2000/svg);
+
+a {
+  color: red;
+}
+
+svg|a {
+  color: black;
+}
+
+/* 打印页面的设置 */
+@page{
+
+}
