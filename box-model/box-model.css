@@ -2,7 +2,48 @@
 
 html,
 body,
-div {
+div,
+section {
   margin: 0;
   padding: 0;
+}
+
+.cs-module-x {
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 50vw;
+  height: 50vh;
+  background-color: teal;
+  color: #fff;
+  text-align: center;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.cs-module-border {
+  box-sizing: border-box;
+  width: 48%;
+  height: 90%;
+  background-color: black;
+  color: white;
+  margin: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: double 30px;
+  padding: 10%;
+}
+
+.cs-module-content{
+  box-sizing: content-box;
+  width: 40%;
+  height: 90%;
+  background-color: darkorange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: double 30px;
+  padding: 1%;
 }
